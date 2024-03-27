@@ -1,5 +1,6 @@
 # About
-Web structure logs viewer with flex search for free use
+Web structure logs viewer with flex search 
+![app](https://github.com/StefjJHK/cs-log-viewer/assets/66734934/9d69226f-a21f-4fe2-a7c8-53f7393a2883)
 
 ## Supports
 - [Compact Log Event Format (CLEF)](https://clef-json.org/)
