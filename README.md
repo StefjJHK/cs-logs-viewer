@@ -1,7 +1,7 @@
-# About
-Web structure logs viewer with flex search 
-![app](https://github.com/StefjJHK/cs-log-viewer/assets/66734934/9d69226f-a21f-4fe2-a7c8-53f7393a2883)
+![logo](https://github.com/StefjJHK/cs-log-viewer/assets/66734934/b23253e0-2d7c-470b-9394-df435aff6882)
 
+## The Web application for viewing and searching by structure logs
+**Documentation available** [here](https://stefjjhk.github.io/cs-log-viewer/)
 ## Supports
 - [Compact Log Event Format (CLEF)](https://clef-json.org/)
 - Filter logs with [SearchJs](https://github.com/deitch/searchjs)
@@ -39,9 +39,5 @@ services:
     image: "migiki/cs-logs-viewer:latest"
     container_name: cs-logs-viewer  
     ports:  
-      - '8080:80'  
-  volumes:  
-      - ./:/node_modules  
-    stdin_open: true  
-    tty: true
+      - '8080:80'
 ```
