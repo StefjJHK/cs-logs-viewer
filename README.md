@@ -1,6 +1,6 @@
 [![CodeQL](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml)
-![logo](https://github.com/StefjJHK/cs-log-viewer/assets/66734934/b23253e0-2d7c-470b-9394-df435aff6882)
 [![Docker Image](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml)
+![logo](https://github.com/StefjJHK/cs-log-viewer/assets/66734934/b23253e0-2d7c-470b-9394-df435aff6882)
 
 ## The Web application for viewing and searching by structure logs
 **Documentation available** [here](https://stefjjhk.github.io/cs-log-viewer/)
