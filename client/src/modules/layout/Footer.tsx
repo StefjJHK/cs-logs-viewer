@@ -9,7 +9,7 @@ const StyledContainer = styled.div`
 export function Footer(): ReactElement {
   return (
     <StyledContainer>
-      <p>Version 1.0.0</p>
+      <p>Version 1.0.2</p>
     </StyledContainer>
   );
 }
