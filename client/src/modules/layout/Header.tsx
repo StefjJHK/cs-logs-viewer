@@ -18,7 +18,6 @@ function Navigation(): ReactElement {
     <Nav appearance="subtle" activeKey={currentPage} onSelect={navigate}>
       <Nav.Item eventKey={PageRoutes.LogsUpload}>Logs upload</Nav.Item>
       <Nav.Item eventKey={PageRoutes.LogsView}>Logs view</Nav.Item>
-      <Nav.Item eventKey={PageRoutes.About}>About</Nav.Item>
     </Nav>
   );
 }

@@ -1,43 +1,29 @@
-![logo](https://github.com/StefjJHK/cs-log-viewer/assets/66734934/b23253e0-2d7c-470b-9394-df435aff6882)
+![logo](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/382ffaa3-1486-49ef-acaa-61e251999706)
+[![CodeQL](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml)
+[![Docker Image](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml)
 
 ## The Web application for viewing and searching by structure logs
-**Documentation available** [here](https://stefjjhk.github.io/cs-log-viewer/)
-## Supports
-- [Compact Log Event Format (CLEF)](https://clef-json.org/)
-- Filter logs with [SearchJs](https://github.com/deitch/searchjs)
-- Multiply log files uploading
+
+CS Logs viewer is developed for viewing structured log files and filtering by logs in a projects that does not use centralized logging.
+
+It's been developed as a web application to be available on both a PC and a server.
+
+**Documentation available** [here](https://stefjjhk.github.io/cs-logs-viewer/)
+## Features
+- Viewing multiple files in Compact Log Event Format
+- Filtering logs
+- Launching in a Docker environment
 - Storing uploaded logs in browser storage
+- Supporting dark and light UI themes
 
-## Search query
-CS Logs viewer uses searchjs for search.
-> Note: the application works with uploaded logs in **internal format**, add 'data.{field name}  at the top level of your query'.
+## When should I use CS Logs viewer?
+**In general** : Use CS Logs viewer in projects that store structure logs in files
 
-### Example:
-File Data:
-```
-{"@t":"2024-03-06T07:43:20.5672449Z","@mt":"Starting up", "@l":"Warning" "env":"Production"}
-{"@t":"2024-03-06T07:43:22.7682431Z","@mt":"Health check", "@l":"Warning "env":"Staging"}
-```
-Search query:
-```
-{"data.@l":"Warning"}
-```
-Output: Logs with @l == 'Warning'
+### Possible situations for storing structure logs in files
+- The project architecture is monolith
+- The project is not a high-load system
+- The project is in its early stages
 
-## Run
-Application can be launched in docker envaironment using [official image](https://hub.docker.com/repository/docker/migiki/cs-logs-viewer/general)
+## Application inteface
 
-### Examples:
-docker run
-`docker run -p 8080:80 --name cs-logs-viewer migiki/cs-logs-viewer:latest`
-
-docker-compose
-```yml
-version: '3.8'  
-services:  
-  client:  
-    image: "migiki/cs-logs-viewer:latest"
-    container_name: cs-logs-viewer  
-    ports:  
-      - '8080:80'
-```
+![Screen2](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/22500d10-d0a7-4c1e-9a5f-ccbc49a6368a)

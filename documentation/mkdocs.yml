@@ -1,0 +1,6 @@
+site_name: Cs Logs viewer docs
+nav:
+  - About: index.md
+  - Supported formats: supported-formats.md
+  - Filtration: filtration.md
+theme: readthedocs
