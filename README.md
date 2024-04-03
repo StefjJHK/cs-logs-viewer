@@ -4,8 +4,7 @@
 
 ## The Web application for viewing and searching by structure logs
 
-CS Logs viewer is developed for viewing structured log files and filtering by logs in a projects that does not use centralized logging.
-
+CS Logs viewer is developed for viewing structured log files and filtering by logs in projects that do not use centralized logging.
 It's been developed as a web application to be available on both a PC and a server.
 
 **Documentation available** [here](https://stefjjhk.github.io/cs-logs-viewer/)
@@ -24,6 +23,6 @@ It's been developed as a web application to be available on both a PC and a serv
 - The project is not a high-load system
 - The project is in its early stages
 
-## Application inteface
+## Application UI
 
 ![Screen2](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/22500d10-d0a7-4c1e-9a5f-ccbc49a6368a)

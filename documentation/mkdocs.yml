@@ -3,4 +3,5 @@ nav:
   - About: index.md
   - Supported formats: supported-formats.md
   - Filtration: filtration.md
+  - Deploy: deploy.md
 theme: readthedocs
