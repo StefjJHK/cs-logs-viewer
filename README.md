@@ -1,6 +1,7 @@
 ![logo](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/382ffaa3-1486-49ef-acaa-61e251999706)
 [![CodeQL](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml)
 [![Docker Image](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml)
+
 <?xml version="1.0"?>
 <svg width="713" height="250" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
  <g class="layer">
@@ -27,12 +28,18 @@
 </svg>
 
 ## The Web application for viewing and searching by structure logs
+
+CS Logs viewer is developed for viewing structured log files and filtering by logs in a projects that does not use centralized logging. It's been developed as a web application to be available on both a PC and a server.
 **Documentation available** [here](https://stefjjhk.github.io/cs-logs-viewer/)
+
 ## Supports
+
 - [Compact Log Event Format (CLEF)](https://clef-json.org/)
 - Filtering logs with [SearchJs](https://github.com/deitch/searchjs)
 - Launching in docker environment
 - Uploading Multiply log files
 - Storing uploaded logs in browser storage
+
 ## Application inteface
+
 ![Screen2](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/22500d10-d0a7-4c1e-9a5f-ccbc49a6368a)
