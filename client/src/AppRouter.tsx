@@ -2,7 +2,6 @@ import { createBrowserRouter, Navigate, RouteObject } from 'react-router-dom';
 import { PageRoutes } from './modules/navigation/Routes';
 import { BaseLayout } from './modules/layout/BaseLayout';
 import { LogsViewPage } from './pages/logs-view-page/LogsViewPage';
-import { AboutPage } from './pages/about-page/AboutPage';
 import { LogsUploadPage } from './pages/logs-upload-page/LogsUploadPage';
 
 const routes: RouteObject[] = [
@@ -17,10 +16,6 @@ const routes: RouteObject[] = [
   {
     path: 'logs-view',
     element: <LogsViewPage />
-  },
-  {
-    path: 'about',
-    element: <AboutPage />
   }
 ];
 
