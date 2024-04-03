@@ -26,3 +26,16 @@ It's been developed as a web application to be available on both a PC and a serv
 ## Application UI
 
 ![Screen2](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/22500d10-d0a7-4c1e-9a5f-ccbc49a6368a)
+
+## Usage
+1. Create `docker-compose.yml`
+```yml
+version: "3.8"
+services:
+  client:
+    image: "migiki/cs-logs-viewer:latest"
+    container_name: cs-logs-viewer
+    ports:
+      - "8080:80"
+```
+2. Run `docker compose up`
