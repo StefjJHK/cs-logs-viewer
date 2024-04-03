@@ -27,7 +27,7 @@
 </svg>
 
 ## The Web application for viewing and searching by structure logs
-**Documentation available** [here](https://stefjjhk.github.io/cs-log-viewer/)
+**Documentation available** [here](https://stefjjhk.github.io/cs-logs-viewer/)
 ## Supports
 - [Compact Log Event Format (CLEF)](https://clef-json.org/)
 - Filtering logs with [SearchJs](https://github.com/deitch/searchjs)
