@@ -1,4 +1,5 @@
-![logo](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/382ffaa3-1486-49ef-acaa-61e251999706)[![CodeQL](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml)
+![logo](https://github.com/StefjJHK/cs-logs-viewer/assets/66734934/382ffaa3-1486-49ef-acaa-61e251999706)
+[![CodeQL](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/codeql.yml)
 [![Docker Image](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml/badge.svg)](https://github.com/StefjJHK/cs-log-viewer/actions/workflows/docker-image.yml)
 <?xml version="1.0"?>
 <svg width="713" height="250" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
