@@ -4,6 +4,7 @@ import { CsLogData } from '../../../modules/cs-log/entities/CsLogData';
 import { ReactElement } from 'react';
 import dateFormat from 'dateformat';
 import stringFormat from 'string-format';
+import { DateUtils } from '../../../utils/DateUtils';
 
 const StyledPanelHeaderContainer = styled.div`
   display: flex;
@@ -35,7 +36,7 @@ const StyledBadge = styled(Badge)`
   flex-shrink: 0;
 `;
 export function CsLogCardHeader({ log }: { log: CsLogData }): ReactElement {
-  const time = dateFormat(log['@t'], 'dd, mm dS, yyyy, h:MM:ss.l');
+  const time = DateUtils.format(log['@t']);
   const logLevel = log['@l'];
   const template = stringFormat(log['@mt'], log);
 
