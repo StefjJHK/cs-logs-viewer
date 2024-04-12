@@ -1,4 +1,4 @@
-import React, { FormEvent, ReactElement, ReactNode } from 'react';
+import React, { FormEvent, memo, ReactElement, ReactNode, useCallback } from 'react';
 import { Formik, FormikValues } from 'formik';
 import { Schema } from 'yup';
 import { Form as RsForm } from 'rsuite';
@@ -20,7 +20,7 @@ const StyledRsForm = styled(RsForm)`
   flex-direction: column;
 `;
 
-export function Form<TValue extends FormikValues, TSchema extends Schema<TValue>>({
+export const Form = memo(function Form<TValue extends FormikValues, TSchema extends Schema<TValue>>({
   defaultValue,
   schema,
   onSubmit,
@@ -33,16 +33,22 @@ export function Form<TValue extends FormikValues, TSchema extends Schema<TValue>
   return (
     <Formik initialValues={defaultValue} onSubmit={onSubmit} validationSchema={schema}>
       {({ handleSubmit }) => {
-        const onSubmitWrapper = (_: boolean, e: FormEvent<HTMLFormElement>) => {
-          handleSubmit(e);
-        };
+        const onSubmitWrapper = useCallback(
+          (_: boolean, e: FormEvent<HTMLFormElement>) => {
+            handleSubmit(e);
+          },
+          [handleSubmit]
+        );
 
-        //eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const onChangeWrapper = (data: any) => {
-          if (onChange) {
-            onChange(data);
-          }
-        };
+        const onChangeWrapper = useCallback(
+          //eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (data: any) => {
+            if (onChange) {
+              onChange(data);
+            }
+          },
+          [onChange]
+        );
 
         return (
           <StyledRsForm
@@ -57,4 +63,4 @@ export function Form<TValue extends FormikValues, TSchema extends Schema<TValue>
       }}
     </Formik>
   );
-}
+});

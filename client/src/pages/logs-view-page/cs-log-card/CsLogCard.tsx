@@ -46,7 +46,7 @@ const ListItemValueContainer = styled.div`
 
   .clipboard-wrapper {
     visibility: hidden;
-    padding-right: 10px;
+    padding-right: 5px;
     align-self: flex-start;
   }
 
@@ -90,6 +90,10 @@ const StyledList = styled(List)`
     display: flex;
     align-items: center;
     padding: 3px 0;
+
+    &:hover {
+      background-color: var(--rs-gray-800);
+    }
 
     .key-name {
       display: block;

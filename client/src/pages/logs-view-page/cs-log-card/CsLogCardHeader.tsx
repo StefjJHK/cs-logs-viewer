@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Badge } from 'rsuite';
 import { CsLogData } from '../../../modules/cs-log/entities/CsLogData';
 import { ReactElement } from 'react';
-import dateFormat from 'dateformat';
 import stringFormat from 'string-format';
 import { DateUtils } from '../../../utils/DateUtils';
 
@@ -38,7 +37,7 @@ const StyledBadge = styled(Badge)`
 export function CsLogCardHeader({ log }: { log: CsLogData }): ReactElement {
   const time = DateUtils.format(log['@t']);
   const logLevel = log['@l'];
-  const template = stringFormat(log['@mt'], log);
+  const template = stringFormat(log['@mt'], log) || log['@mt'] || 'No @mt field provided in log';
 
   return (
     <StyledPanelHeaderContainer>
