@@ -42,6 +42,9 @@ const ListItemValueContainer = styled.div`
       background: #1e1e1e;
       overflow: auto;
     }
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 
   .clipboard-wrapper {

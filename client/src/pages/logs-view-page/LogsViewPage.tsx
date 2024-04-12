@@ -15,7 +15,7 @@ import { Loader } from '../../modules/loader/Loader';
 
 const defaultFilter: LogsViewPageFormData = {
   filter: '',
-  order: SortOrder.Ascending
+  order: SortOrder.Descending
 };
 const logsCountPerPage = 15;
 
@@ -38,6 +38,8 @@ const StyledLink = styled(Link)`
   gap: 5px;
 `;
 const StyledPageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   gap: 10px;
 
