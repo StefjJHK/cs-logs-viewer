@@ -70,7 +70,7 @@ export function LogsFilter({ defaultFilter, logs, loadedLogFiles, onChange, onFi
         onChange(sortedLogs);
       });
     }
-  }, [order, logs]);
+  }, [filter, order, logs]);
 
   const onSubmit = (values: LogsViewPageFormData) => {
     setFilter(values.filter ?? null);
